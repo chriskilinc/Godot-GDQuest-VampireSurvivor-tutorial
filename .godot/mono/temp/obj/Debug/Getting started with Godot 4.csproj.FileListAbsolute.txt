@@ -1,0 +1,17 @@
+E:\Projects\2d-project-start\.godot\mono\temp\bin\Debug\Getting started with Godot 4.deps.json
+E:\Projects\2d-project-start\.godot\mono\temp\bin\Debug\Getting started with Godot 4.runtimeconfig.json
+E:\Projects\2d-project-start\.godot\mono\temp\bin\Debug\Getting started with Godot 4.dll
+E:\Projects\2d-project-start\.godot\mono\temp\bin\Debug\Getting started with Godot 4.pdb
+E:\Projects\2d-project-start\.godot\mono\temp\bin\Debug\GodotSharp.dll
+E:\Projects\2d-project-start\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\Getting started with Godot 4.csproj.AssemblyReference.cache
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\Getting started with Godot 4.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\Getting started with Godot 4.AssemblyInfoInputs.cache
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\Getting started with Godot 4.AssemblyInfo.cs
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\Getting started with Godot 4.csproj.CoreCompileInputs.cache
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\Getting started with Godot 4.csproj.CopyComplete
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\Getting started with Godot 4.dll
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\refint\Getting started with Godot 4.dll
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\Getting started with Godot 4.pdb
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\Getting started with Godot 4.genruntimeconfig.cache
+E:\Projects\2d-project-start\.godot\mono\temp\obj\Debug\ref\Getting started with Godot 4.dll

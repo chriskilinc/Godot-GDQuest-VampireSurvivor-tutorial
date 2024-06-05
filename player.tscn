@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=3 uid="uid://sl3n7t2kh74v"]
+
+[ext_resource type="Script" path="res://player.cs" id="1_jc8dn"]
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_r5juc"]
+[ext_resource type="PackedScene" uid="uid://df56j3y5my61g" path="res://gun.tscn" id="3_egvm3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fd2ax"]
+radius = 36.0139
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8m13e"]
+radius = 42.0476
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8fapk"]
+bg_color = Color(0.152941, 0.168627, 0.188235, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sutuc"]
+bg_color = Color(0.388235, 0.8, 0.372549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Player" type="CharacterBody2D"]
+editor_description = "Disable \"moving platform\" to disable \"sticking\""
+platform_floor_layers = 4294967040
+script = ExtResource("1_jc8dn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -15)
+shape = SubResource("CircleShape2D_fd2ax")
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_r5juc")]
+unique_name_in_owner = true
+
+[node name="Gun" parent="." instance=ExtResource("3_egvm3")]
+position = Vector2(0, -38)
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(0, -16)
+shape = SubResource("CircleShape2D_8m13e")
+debug_color = Color(0.747661, 0.274768, 0.373525, 0.42)
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -94.0
+offset_top = -125.0
+offset_right = 94.0
+offset_bottom = -109.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_8fapk")
+theme_override_styles/fill = SubResource("StyleBoxFlat_sutuc")
+value = 100.0
+show_percentage = false

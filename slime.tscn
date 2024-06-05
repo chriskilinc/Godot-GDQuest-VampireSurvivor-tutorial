@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt2ucbt2nqoj0"]
+
+[ext_resource type="Script" path="res://slime.cs" id="1_5oyb0"]
+[ext_resource type="PackedScene" uid="uid://ogik4s70pgwl" path="res://characters/slime/slime.tscn" id="1_oskjs"]
+[ext_resource type="Script" path="res://characters/slime/slimeContainer.cs" id="3_1htjy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wxret"]
+radius = 50.01
+
+[node name="Slime" type="CharacterBody2D"]
+editor_description = "Disable \"moving platform\" to disable \"sticking\""
+collision_layer = 2
+collision_mask = 3
+platform_floor_layers = 4294967040
+script = ExtResource("1_5oyb0")
+
+[node name="SlimeContainer" parent="." instance=ExtResource("1_oskjs")]
+unique_name_in_owner = true
+script = ExtResource("3_1htjy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -30)
+shape = SubResource("CircleShape2D_wxret")

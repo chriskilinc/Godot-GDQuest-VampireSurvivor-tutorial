@@ -1,0 +1,14 @@
+res://game.tscn
+res://player.tscn
+res://gun.tscn
+res://slime.tscn
+res://bullet.tscn
+res://player.cs
+res://slime.cs
+res://gun.cs
+res://Bullet.cs
+res://characters/slime/slime.tscn
+res://characters/slime/slimeContainer.cs
+res://smoke_explosion/smoke_explosion.tscn
+res://game.cs
+res://characters/happy_boo/happy_boo.tscn
